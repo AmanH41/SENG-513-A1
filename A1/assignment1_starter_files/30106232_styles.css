@@ -91,8 +91,10 @@ header, section, footer {
     text-transform: uppercase;
     color: #fff;
     list-style-position: outside;
-    display: list-item;
-    
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
 
 }
 
@@ -285,6 +287,14 @@ header, section, footer {
         padding-right: 10px;
     }
        
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+/* styles for Retina displays */
+
+
 }
 
 

@@ -5,9 +5,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ADBCA5;
-
     /*Flourish as background image*/ 
     background-image: url("/A1/assignment1_starter_files/images/flourish.png");
+    background-position: top left;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -23,7 +23,7 @@ button{
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
 }
 
 /*Rremove scroll bar */
@@ -51,6 +51,7 @@ header, section, footer {
 
 .hero-section h1 {
     text-align: center;
+    font-size: 2rem; 
 
 }
 
@@ -73,30 +74,40 @@ header, section, footer {
 }
 .features-section h2{
     font-weight: bold;
+    font-size: 1.5rem; 
+
 }
 
 .feature {
     /*Remove border from style.css */
+    display: block;
     border: transparent;
     padding: 10px;
     border-color: #007c95;
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);    
 }
 
-.quality-list li{
-    text-transform: uppercase;
+
+.quality-list ol{
+    justify-content: center;
+    width: 102px;
+}
+
+.quality-list li {
     color: #fff;
-    list-style-position: outside;
     font-weight: bold;
-    padding: 10px;
+    list-style-position: inside;
+    text-transform: uppercase;
     margin: 5px 0;
-    border-radius: 5px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
 
 }
+
 
 .feature p {
     font-size: 18px;
@@ -107,11 +118,11 @@ header, section, footer {
 }
 
 .feature button {
-    background: rgb(36, 169, 36);
+    background: linear-gradient(132deg, #24a924, #7cc87c);
 }
 
 .feature button:hover {
-    background: rgb(12, 88, 12);
+    background: linear-gradient(132deg, #166916, #789378);
     transform: scale(1.05);
 
 }
@@ -166,6 +177,7 @@ header, section, footer {
     height: auto;
     border-radius: 12px;
 }
+
 
 
 /*Break points */
@@ -289,13 +301,6 @@ header, section, footer {
        
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-/* styles for Retina displays */
-
-
-}
 
 
 

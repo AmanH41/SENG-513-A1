@@ -13,7 +13,7 @@ body {
     background-size: auto;
     position: relative;
 }
-
+/*have the same styling for buttons*/
 button{
     color: white;
     font-size: 18px;
@@ -80,7 +80,7 @@ header, section, footer {
 
 .feature {
     /*Remove border from style.css */
-    display: block;
+    display: block;                     
     border: transparent;
     padding: 10px;
     border-color: #007c95;
@@ -90,22 +90,12 @@ header, section, footer {
 }
 
 
-.quality-list ol{
-    justify-content: center;
-    width: 102px;
-}
-
 .quality-list li {
     color: #fff;
     font-weight: bold;
     list-style-position: inside;
     text-transform: uppercase;
     margin: 5px 0;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-
-
 }
 
 
@@ -141,22 +131,17 @@ header, section, footer {
     padding: 10px;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-grow: 2;
 }
 
 .about-text p {
     font-style: italic;
-
 }
 
 .about-section picture {
-    flex-grow: 1;
     padding-right: 10px;
 }
 
 .cta-section {
-    /*Remove background color from style.css */
-    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
 }
@@ -177,7 +162,6 @@ header, section, footer {
     height: auto;
     border-radius: 12px;
 }
-
 
 
 /*Break points */

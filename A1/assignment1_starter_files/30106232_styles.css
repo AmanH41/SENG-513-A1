@@ -2,14 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
     justify-content: center;
     align-items: center;
 
+    background-color: #55822e;
+
     /*Flourish as background image*/ 
     background-image: url("/A1/assignment1_starter_files/images/flourish.png");
+    background-position: center;
     z-index: 112;
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
     position: relative;
 }
@@ -30,6 +33,7 @@ header, section, footer {
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
+    background-color: transparent;
     align-items: center;
     background-image: url("/A1/assignment1_starter_files/images/background-extra-large.jpg");
     background-size: cover;
@@ -51,6 +55,12 @@ header, section, footer {
 .features-section {
     /*Remove background color from style.css */
     background-color: transparent;
+    display: grid;
+    font-weight: bold;
+    gap: 20px;
+    background-color: rgba(73, 129, 92, 0.8);
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .feature {
@@ -59,10 +69,63 @@ header, section, footer {
     padding: 10px;
 }
 
+.quality-list li{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    list-style-type: circle;
+    list-style-position: outside;
+
+}
+
+.feature p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.feature button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgb(36, 169, 36);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feature button:hover {
+    background: rgb(12, 88, 12);
+    transform: scale(1.05);
+
+}
+
 .about-section {
     /*Remove background color from style.css */
     background-color: transparent;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section > .about-text {
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+.about-section picture {
+    flex-grow: 1;
     padding-right: 10px;
 }
 
@@ -85,6 +148,13 @@ header, section, footer {
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
 }
 
+.cta-section button:hover{
+    transform: scale(1.05);
+    background: linear-gradient(132deg, #002c5a, #007c95);
+
+
+}
+
 .responsive-image {
     width: 100%;
     height: auto;
@@ -100,19 +170,7 @@ header, section, footer {
         background-color: #17a2c9;
 
     }
-    .hero-section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        align-items: center;
-        background-image: url("/A1/assignment1_starter_files/images/background-extra-large.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;    
-    }
-    
+
     .hero-section h1 {
         text-align: center;
         flex-wrap: 1;
@@ -131,7 +189,7 @@ header, section, footer {
 @media only screen and (min-width:768px){
     body{
         background-color: #c9b517;
-        
+ 
     }
 }
 
@@ -154,6 +212,60 @@ header, section, footer {
         background-color: #333;
     }
 }
+
+/*break points for content arrangment*/
+@media only screen and (max-width:1060px){
+    .about-section {
+        /*Remove background color from style.css */
+        background-color: transparent;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-section > .about-text {
+        padding: 10px;
+        flex-wrap: wrap;
+        flex-grow: 2;
+    }
+    
+    .about-section picture {
+        flex-grow: 1;
+        padding-right: 10px;
+    }
+       
+}
+
+@media only screen and (min-width:1300px) and (max-width:1610px) {
+    .about-section {
+        /*Remove background color from style.css */
+        background-color: transparent;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-section > .about-text {
+        padding: 10px;
+        flex-wrap: wrap;
+        flex-grow: 2;
+    }
+    
+    .about-section picture {
+        flex-grow: 1;
+        padding-right: 10px;
+    }
+       
+}
+
+
+
+
+
 
 
 
